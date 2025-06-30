@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Analyzer - Comprehensive URL Analysis</title>
+	<link rel="stylesheet" href="style.css">
+	<meta name="description" content="Analyze URLs for basic information, components, domain analysis, and security validation. A comprehensive tool for developers and analysts.">
+	<meta name="keywords" content="URL Analyzer, URL Analysis, URL Components, Domain Analysis, Security Validation, Web Development, URL Checker">
+	<meta name="author" content="Ankitg996@gmail.com">
+	<link rel="icon" href="icon.png" type="image/x-icon">
+	<meta name="theme-color" content="#138808">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🔍 URL Analyzer</h1>
+            <p class="subtitle">Comprehensive URL Analysis Tool</p>
+            <p class="tagline">Made with ❤️ for Bharat</p>
+            <div class="bharat-colors"></div>
+        </div>
+
+        <div class="input-section">
+            <div class="input-group">
+                <input type="text" id="urlInput" class="url-input" placeholder="Enter URL to analyze (e.g., https://www.example.com/path?param=value)">
+                <button id="analyzeBtn" class="analyze-btn">🚀 Analyze</button>
+            </div>
+        </div>
+
+        <div id="loading" class="loading">
+            <div class="spinner"></div>
+            Analyzing URL...
+        </div>
+
+        <div id="resultsContainer" class="results-container">
+            <div class="results-grid">
+                <div class="result-section basic-section">
+                    <div class="section-header">
+                        <span>📊</span>
+                        <span>Basic Information</span>
+                    </div>
+                    <div class="section-content" id="basicContent"></div>
+                </div>
+
+                <div class="result-section components-section">
+                    <div class="section-header">
+                        <span>🧩</span>
+                        <span>URL Components</span>
+                    </div>
+                    <div class="section-content" id="componentsContent"></div>
+                </div>
+
+                <div class="result-section domain-section">
+                    <div class="section-header">
+                        <span>🌐</span>
+                        <span>Domain Analysis</span>
+                    </div>
+                    <div class="section-content" id="domainContent"></div>
+                </div>
+
+                <div class="result-section security-section">
+                    <div class="section-header">
+                        <span>🔒</span>
+                        <span>Security & Validation</span>
+                    </div>
+                    <div class="section-content" id="securityContent"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="errorMessage" class="error-message"></div>
+
+        <div class="examples">
+            <div class="div-h4">🎯 Sample URLs</div>
+            <div class="example-urls">
+                <span class="example-url" onclick="analyzeExample('https://www.flipkart.com/search?q=mobile')">Flipkart Search</span>
+                <span class="example-url" onclick="analyzeExample('https://github.com/microsoft/vscode')">GitHub Repository</span>
+                <span class="example-url" onclick="analyzeExample('https://api.razorpay.com/v1/payments')">Razorpay API</span>
+                <span class="example-url" onclick="analyzeExample('https://www.zomato.com/bangalore/restaurants')">Zomato Restaurants</span>
+                <span class="example-url" onclick="analyzeExample('https://in.bookmyshow.com/explore/movies-mumbai')">BookMyShow Movies</span>
+            </div>
+        </div>
+		<div class="mark">made by <span>Ankitg996@gmail.com</span></div>
+    </div>
+	<script src="/script.js"></script>
+</body>
+</html>
